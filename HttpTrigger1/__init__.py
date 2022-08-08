@@ -19,7 +19,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     # Convert df to html
     table_html=gas_prices.to_html(classes="query_table")
     
-    # Define HTML Template
+    # Define HTML Template 123
     template_html = '''
     <!DOCTYPE html>
     <html>
