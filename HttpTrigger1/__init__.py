@@ -16,8 +16,10 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     print(gas_prices.info())
     gas_prices.reset_index(inplace=True)
 
+    # Convert df to html
     table_html=gas_prices.to_html(classes="query_table")
-
+    
+    # Define HTML Template
     template_html = '''
     <!DOCTYPE html>
     <html>
